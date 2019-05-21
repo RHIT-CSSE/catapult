@@ -1,0 +1,1 @@
+Only look at solutions after you have attempted the programs

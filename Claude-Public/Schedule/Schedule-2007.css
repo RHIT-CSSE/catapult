@@ -1,0 +1,96 @@
+body {
+	font-family: "Optima";
+}
+
+table {
+	color: #222222;
+	background-color: #f8f8f8;
+	border-top: 3px #222222 solid;
+	border-bottom: 3px #222222 solid;
+}
+
+td, th {
+	border-bottom: 1px #222222 solid;
+	padding: 0.75ex;
+	vertical-align: top;
+	text-align: center;
+}
+
+ul {
+	margin: 0ex;
+	padding-left: 1.5em;
+	text-align: left;
+}
+
+p {
+	margin: 0ex;
+}
+
+p.note {
+	font-size: 60%;
+}
+
+a.detailsLink {
+	display: block;
+	margin-top: 0.5ex;
+	margin-bottom: 0ex;
+	padding: 0.25ex;
+	border: 1px #000000 solid;
+	text-align: center;
+	text-decoration: none;
+	font-size: 80%;
+	color: #f8f8f8;
+	background-color: #666666;
+}
+
+a.detailsLink:hover {
+	color: #FFFF00;
+	background-color: #000000;
+}
+
+td.listCell {
+	text-align: left;
+}
+
+td.Labs1 {
+	background-color: #CCFF99;
+}
+
+td.Labs2 {
+	background-color: #99CCFF;
+}
+
+td.Labs3 {
+	background-color: #FFCCFF;
+}
+
+td.Labs4 {
+	background-color: #FFFF99;
+}
+
+td.Labs5 {
+	background-color: #FFCC99;
+}
+
+td.Labs6 {
+	background-color: #CCFF99;
+}
+
+td.Labs7 {
+	background-color: #99CCFF;
+}
+
+td.Labs8 {
+	background-color: #FFCCFF;
+}
+
+td.Projects1 {
+	color: #f8f8f8;
+	background-color: #660000;
+}
+
+td.Projects2 {
+	color: #f8f8f8;
+	background-color: #000066;
+}
+

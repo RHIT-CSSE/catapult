@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!-- saved from url=(0055)http://www.rose-hulman.edu/class/csse/catapult/2015-S1/ --><!---->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="./style/style.css" />
+    <title>Catapult Project Web Page</title>
+</head>
+<body id="main" style="" lang="EN-US" link="blue" vlink="blue">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"></script>
+    <script src="./scripts/catapultLinks.js"></script>
+
+    <!-- Created June 2014 by Trevor Burch and Austin Fahsl -->
+    <!-- Refactored July 2018 by Anthony Galea and Derek Grayless -->
+
+    <!-- The main header -->
+    <div class="Section1">
+        <h1>Catapult 2 - July, 2018 </h1>
+        <h1>Python Programming Instruction / Projects</h1>
+
+        <!-- Contacts table: contains information about the professor and student assistants -->
+        <table id="contacts" style="text-align: center;">
+            <tbody>
+                <tr class="alt">
+                    <td>
+                        <p><b>Instructor</b></p>
+                    </td>
+                    <td>
+                        <p><a href="mailto:defoe@rose-hulman.edu">Delvin Defoe</a></p>
+                    </td>
+                    <td>
+                        <p>Associate Professor of Computer Science and Software Engineering</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <b>Student Assistants<br>
+                            (emails included in link)</b>
+                        </p>
+                    </td>
+                    <td>
+                        <p> 
+                            <a href="mailto:galeaac@rose-hulman.edu">Anthony Galea</a>
+                        </p>
+                    </td>
+                    <td>
+                        <p>Computer Science Major (Class of '21) </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p></p>
+                    </td>
+                    <td>
+                        <p>
+                            <a href="mailto:grayledw@rose-hulman.edu">Derek Grayless</a>
+                        </p>
+                    </td>
+                    <td>
+                        <p>Computer Science Major (Class of '21) </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+
+        <!-- Schedules table: contains the links to the current catapult schedule and python project schedule -->
+        <table id="schedules">
+            <tbody>
+                <tr>
+                    <td>
+                        <h2>
+                            <a href="./Schedule/PythonCatapult-Schedule.htm">Project Schedule</a>
+                        </h2>
+                    </td>
+                    <!-- <td>
+                        <h2>
+                            <a href="./StudentsPhoto">Students Photo</a>
+                        </h2>
+                    </td> -->
+                    <td>
+                        <h2>
+                            <a href="./Schedule/2018Session1schedule.pdf">Catapult Schedule</a>
+                        </h2>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Inserts the cartoon. EDIT HERE to change the cartoon. The home directory is the catapult Public Repo -->
+        <img id="cartoon" src="./images/project.gif" alt="Comic" width="800" height="252">
+
+        <!-- Links and information header -->
+        <h2 id="tabs">Links and Information</h2>
+
+        <!-- Begin the Tabs section. NOTE: The information must be updated on the TABS as well as
+        the TABLE that appears when a window is too small. They are not linked and must both
+        be changed manually. -->
+        <div class="tabs" id="tabs">
+
+            <div class="tab"> <input id="tab-1" name="tab-group-1" checked="checked" type="radio"><label for="tab-1">Announcements</label>
+                <div class="content announce" id="tab-1-content">
+                    <script type="text/javascript"> 
+                        // Call this JavaScript function to display the links.  
+                        // Pass selector information for containing element (div).
+                        displayAnnouncementsLinks('.content.announce');
+                    </script>
+                </div>
+            </div>
+
+            <div class="tab"> <input id="tab-2" name="tab-group-1" type="radio"> <label for="tab-2">Rose/Catapult</label>
+                <div class="content rose"> 
+                    <script type="text/javascript"> 
+                        // Call this JavaScript function to display the links.  
+                        // Pass selector information for containing element (div).
+                        displayRoseLinks('.content.rose');
+                    </script>
+                </div>
+            </div>
+
+            <div class="tab"> <input id="tab-3" name="tab-group-1" type="radio"> <label for="tab-3">Python</label>
+                <div class="content python"> 
+                    <script type="text/javascript"> 
+                        // Call this JavaScript function to display the links.  
+                        // Pass selector information for containing element (div).
+                        displayPythonLinks('div.content.python');
+                    </script>
+                </div>
+            </div>
+
+            <!--tab to display graphics related links-->
+            <div class="tab"> <input id="tab-4" name="tab-group-1" type="radio"> <label for="tab-4">Graphics</label>
+                <div class="content graphics"> 
+                    <script type="text/javascript"> 
+                        // Call this JavaScript function to display the links.  
+                        // Pass selector information for containing element (div).
+                        displayGraphicsLinks('div.content.graphics');
+                    </script>
+                </div>
+            </div>
+
+            <!--tab to display other links-->
+            <div class="tab"> <input id="tab-5" name="tab-group-1" type="radio"> <label for="tab-5">Other</label>
+                <div class="content other"> 
+                    <script type="text/javascript"> 
+                        // Call this JavaScript function to display the links.  
+                        // Pass selector information for containing element (div).
+                        displayOtherLinks('div.content.other');
+                    </script>
+                </div>
+            </div>
+        </div> <!-- tabs div -->
+    </div> <!-- Section1 div -->
+
+    <div id="non-tabs">
+        <!-- Begin the links table. NOTE: The information must be updated on the TABS as well as
+        the TABLE that appears when a window is too small. They are not linked and must both
+        be changed manually. -->
+        <table id="links">
+            <tbody>
+                <tr>
+                    <td>
+                        <h2>Links and Information</h2>
+
+                        <h3>Announcements</h3>
+                        <ul class="list announce">
+                            <script type="text/javascript"> 
+                                // Call this JavaScript function to display the links.  
+                                // Pass selector information for containing element (div).
+                                displayAnnouncementsLinks('.list.announce');
+                            </script>
+                        </ul>
+
+                        <h3>Rose/Catapult</h3>
+                        <ul class="list rose">
+                            <script type="text/javascript"> 
+                                // Call this JavaScript function to display the links.  
+                                // Pass selector information for containing element (div).
+                                displayRoseLinks('.list.rose');
+                            </script>
+                        </ul>
+
+                        <h3>Python</h3>
+                        <ul class="list python">
+                            <script type="text/javascript"> 
+                                // Call this JavaScript function to display the links.  
+                                // Pass selector information for containing element (div).
+                                displayPythonLinks('.list.python');
+                            </script>
+                        </ul>
+
+                        <h3>Graphics</h3>
+                        <ul class="list graphics">
+                            <script type="text/javascript"> 
+                                // Call this JavaScript function to display the links.  
+                                // Pass selector information for parent element (ul).
+                                displayGraphicsLinks('.list.graphics');
+                            </script>
+                        </ul>
+
+                        <h3>Other</h3>
+                        <ul class="list other">
+                            <script type="text/javascript">
+                                // Call this JavaScript function to display the links.
+                                // Pass selector information for parent element (ul).
+                                displayOtherLinks('.list.other');
+                            </script>
+                        </ul>
+                        <br />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

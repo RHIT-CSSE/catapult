@@ -1,0 +1,25 @@
+Introduction to your program. 
+	Probably similar to your abstract.
+
+How to use your program, or basic gameplay.
+	Include screenshots
+
+About Python
+	History
+
+Process Used to write the software
+	All we did when we started the project. Include some of your user stories and Design (content of index cards).
+
+	
+Code and explanation
+	Copy and paste a couple interesting segments of code and explain each. 
+
+Problems Encountered
+	The problems you had and how your team worked together to solve them.
+
+Conclusion
+	Any final remarks. Final screenshot?
+
+Sources
+	URLs of sources you used for learning about your project
+	URLs of sources you consulted to write this report

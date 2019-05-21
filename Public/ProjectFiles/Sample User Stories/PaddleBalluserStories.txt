@@ -1,0 +1,33 @@
+[x] Blank screen appears 
+[x] Movable (left and right arrows) paddle appears [paddle object]
+	[x] Don't need to press again to move (use boolean)
+[x] Balls appear in a fixed initial location but random velocity. [ball object]
+	[x] Bounce off walls (correctly)
+	[x] Get constant velocity even if lots of events [timer]
+	[x] Bounce off paddle
+	[x] Game ends when no more balls on screen
+[x] Balls accelerate with gravity [.move method enhancement]
+[x] Balls stop when they collide 
+[x] Balls obey conservation of momentum [see physics text]
+[x] Balls can have different colors
+[x] Balls can have different sizes/masses
+[x] The score changes: point for bounce is prop to # balls on screen at hte time (so reward for keeping lots in air)
+[x] Change the speed of the paddle
+[x] Make some balls have rings like Saturn
+	[ ] Fancy rings that are rotated arcs (using transparent transform)
+[x] Rename with planet name, which inherits from Ball. 
+	[ ] RingedPlanet inherits from Planet?
+[x] Teleport colliding balls apart
+[x] Pause button works
+[x] Keep paddles from getting stuck on edges (it's that keyups stop it)
+[x] Make random stars in the background
+[ ] Make the paddle accelerate
+[ ] Draw portal, out of which the planets fall
+[ ] Screen refresh rate is correct
+[ ] Have it use less CPU power (pauses)
+[ ] Scoring:
+	[ ] Have a target at which point you win
+	[ ] Lose points when one gets by, lose more if its faster and there are fewer balls
+	[ ] Gain more points for bouncing a fast ball?
+	[ ] CONSIDER: Fix so it only counts 1 collision (like teleport colliding ball up further]
+	

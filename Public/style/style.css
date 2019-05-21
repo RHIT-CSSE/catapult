@@ -1,0 +1,183 @@
+/* Copyright 2014 Evernote Corporation. All rights reserved. */
+#style-1-cropbar-clipper .en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+#style-1-cropbar-clipper .en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+
+body {
+    /* Specifies the default settings for the entire body of the webpage */
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    background-image: url("../images/Rose Background Recolored.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    text-shadow: 1px 1px 2px #220000;
+}
+
+#contacts, #schedules {
+    /* Specifications for the size of the contact information table */
+    width: 62.6%;
+    margin-left: 18.7%;
+    margin-right: 18.7%;
+    border-collapse: collapse;
+}
+
+#contacts td, #contacts th {
+    /* Set the border outline of the rows of the table */
+    font-size: 1em;
+    border: 1px solid #000000;
+    padding: 3px 7px 2px 7px;
+}
+
+#contacts tr td p a:link, #contacts tr td p a:visited{
+    /* sets links and visited links in the student rows of the contacts table to be Rose-Red colored */
+    color: #800000;
+}
+
+#contacts tr td {
+    /* set the background-color of the student rows to be grey */
+    background-color: #BBBBBB;
+}
+
+#contacts tr.alt td, #contacts tr.alt td p a:link, #contacts tr.alt td p a:visited {
+    /* set the color of the links on the professor row to be grey and the background to be red */
+    color: #BBBBBB;
+    background-color: #800000;
+}
+
+#main h2 ,#main h1{
+    /* Align the header text to the center of the screen and set the color to grey */
+    width: 62.6%;
+    margin-left: 18.7%;
+    margin-right: 18.7%;
+    text-align: center;
+    color: #BBBBBB;
+}
+
+#main h2 a:link , #main h3 a:link, #main h2 a:visited, #main h3 a:visited{
+    /* Set the color of links in the headers to be grey */
+    color: #BBBBBB;
+}
+
+#schedules tr td h2 a:link, #schedules tr td h2 a:visited{
+    /* Set the properties of the links to the schedules */
+    text-align: center;
+    color: #BBBBBB;
+}
+
+#cartoon{
+    /* Set the dimensions of the cartoon. This may need to be edited upon changing the cartoon!!! */
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+}
+#links{
+    /* Set the properties of the table of links that appears if the browser width is too thin for the tabs */
+    color: #BBBBBB;
+    width: 62.6%;
+    margin-left: 18.7%;
+    margin-right: 18.7%;
+}
+
+#links tbody tr td h2{
+    /* Align the headers of the links table to be centered */
+    text-align: center;
+}
+
+#links tbody tr td li a:link, #links tbody tr td li a:visited{
+    /* Set the color of links in the links table to be grey */
+    color: #BBBBBB;
+}
+
+/* Start tabs */
+#tabs{
+    /* Set the alignment and font of the tabs section */
+    width: 62.6%;
+    margin-left: 18.7%;
+    margin-right: 18.7%;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.tabs {
+    /* Set the properties of the tabs group */
+    position: relative; min-height: 275px; /* This part sucks (TYPICALLY 275!!!)*/
+    clear: both;
+    width: 62.6%;
+    margin-left: 18.7%;
+    margin-right: 18.7%;
+    z-index: 1;
+}
+
+.tab {
+    /* Set the properties of the individual tabs */
+    float: left;
+}
+
+.tab label {
+    /* Set the properties of the labels on the tabs */
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    background: #eee; text-align: center;
+    font-size: 1.1em;
+    padding: 10px; border: 1px solid #ccc; margin-left: -1px; background: #800000;
+    color: #BBBBBB;
+    position: relative;
+    left: 1px; border-radius: 10px 10px 0 0;
+    z-index: 2;
+}
+
+/* Add a shadow emphasis on hover over. This caused a glitch in IE, so it has been commented out. */
+/*
+.tab label:hover{
+    box-shadow: 0px 0px 10px rgba(0,0,0,2);
+    z-index: 3;
+}*/
+
+.tab [type=radio] {
+    /* The individual radio buttons that appear with the tabs are set to not be displayed */
+    display: none; 
+}
+
+.content {
+    /* Set the properties of the body of the tabs */
+    position: absolute;
+    top: 33px;
+    left: 0;
+    background-color: #BBBBBB;
+    right: 0;
+    color: #000000;
+    bottom: 0;
+    padding: 20px;
+    border: 1px solid #ccc; 
+}
+
+.content li a:link,.content li a:visited{
+    /* Set the link color in the tabs to be grey */
+    color: #800000;
+}
+
+[type=radio]:checked ~ label {
+    /* Determine what happens to the label when a tab is selected */
+    background: #330000;
+    border-bottom: 1px solid white;
+    z-index: 2;
+}
+
+[type=radio]:checked ~ label ~ .content {
+    /* Determine what happens to the body when a tab is selected */
+    z-index: 1;
+}
+
+/* Remove the links and display the tabs if the browser is wide enough */
+@media (min-width: 846px){#links{display:none;}}
+
+/* Remove the tabs and display the links if the browser is not wide enough */
+@media (max-width: 845px){#tabs{display:none;}}
+/* End Tabs */

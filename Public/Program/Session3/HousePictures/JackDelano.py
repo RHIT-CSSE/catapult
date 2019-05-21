@@ -1,0 +1,77 @@
+import zellegraphics as zg
+import time
+
+win = zg.GraphWin("window", 500, 800)
+
+bottom = zg.Rectangle(zg.Point(20, 400), zg.Point(480, 780))
+bottom.setWidth(3)
+bottom.setFill(zg.color_rgb(80, 42, 42))
+bottom.draw(win)
+
+chimney = zg.Rectangle(zg.Point(350, 250), zg.Point(400, 350))
+chimney.setWidth(3)
+chimney.setFill(zg.color_rgb(60, 32, 32))
+chimney.draw(win)
+
+smoke1 = zg.Circle(zg.Point(375, 175), 20)
+smoke1.setWidth(0)
+smoke1.setFill("grey")
+smoke1.draw(win)
+smoke2 = smoke1.clone()
+smoke2.move(-10, -10)
+smoke2.draw(win)
+smoke3 = smoke1.clone()
+smoke3.move(10, -10)
+smoke3.draw(win)
+smoke4 = smoke1.clone()
+smoke4.move(-10, 10)
+smoke4.draw(win)
+smoke5 = smoke1.clone()
+smoke5.move(10, 10)
+smoke5.draw(win)
+
+smoke6 = zg.Circle(zg.Point(300, 100), 20)
+smoke6.setWidth(0)
+smoke6.setFill("grey")
+smoke6.draw(win)
+smoke7 = smoke6.clone()
+smoke7.move(10, 0)
+smoke7.draw(win)
+smoke8 = smoke6.clone()
+smoke8.move(-10, 0)
+smoke8.draw(win)
+smoke9 = smoke6.clone()
+smoke9.move(0, 10)
+smoke9.draw(win)
+smoke10 = smoke6.clone()
+smoke10.move(0, -10)
+smoke10.draw(win)
+
+roof = zg.Polygon(zg.Point(20, 400), zg.Point(480, 400), zg.Point(250, 230))
+roof.setWidth(3)
+roof.setFill("red")
+roof.draw(win)
+
+door = zg.Rectangle(zg.Point(200, 780), zg.Point(300, 580))
+door.setWidth(3)
+door.setFill("green")
+door.draw(win)
+
+handle = zg.Circle(zg.Point(290, 680), 5)
+handle.setFill("black")
+handle.draw(win)
+
+window = zg.Rectangle(zg.Point(200, 430), zg.Point(300, 530))
+window.setWidth(3)
+window.setFill("white")
+window.draw(win)
+
+windowFrame1 = zg.Line(zg.Point(250, 430), zg.Point(250, 530))
+windowFrame1.setWidth(3)
+windowFrame1.draw(win)
+windowFrame2 = zg.Line(zg.Point(200, 480), zg.Point(300, 480))
+windowFrame2.setWidth(3)
+windowFrame2.draw(win)
+
+win.getMouse()
+

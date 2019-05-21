@@ -1,0 +1,18 @@
+All of them are forked into a copied of their repos in 
+	https://github.com/CatapultOperation
+
+
+
+
+Team 28 - The legend Fight
+	https://github.com/TonyLiuyh/LoL/
+Team 29 - Console RGB game (Private repos, forked)
+	https://github.com/fuzzything44/pyRPG
+Team 30 - Terrain Generation
+	https://github.com/Gameexpert/Terrain_Project
+Team 32 - Teris
+	https://github.com/pfarcasanu/Tetris-Rose-Hulman-Project
+Team 33 - Unfair Python
+	https://github.com/AndrewBridgeman/Unfair-Python
+Team 34 - Electromagnetic Physics Simulator
+	https://github.com/jsdsparky/operation-catapult-physics-simulator 

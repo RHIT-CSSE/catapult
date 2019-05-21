@@ -1,0 +1,190 @@
+Python 3.4.2 (v3.4.2:ab2c023a9432, Oct  6 2014, 22:15:05) [MSC v.1600 32 bit (Intel)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> for x in [4, 5, 6, 7, 8, 10, 15] :
+	x + 6
+
+	
+10
+11
+12
+13
+14
+16
+21
+>>> for x in range(12):
+	x + 6
+
+	
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+>>> list(range(12))
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+>>> list(range(12))
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+>>> for x in range(6,12):
+	x + 6
+
+	
+12
+13
+14
+15
+16
+17
+>>> for x in range(6,12,2):
+	x + 6
+
+	
+12
+14
+16
+>>> full_name = 'ClaudeWilsonAnderson')
+SyntaxError: invalid syntax
+>>> full_name = 'ClaudeWilsonAnderson'
+>>> for letter in full_name:
+	letter
+
+	
+'C'
+'l'
+'a'
+'u'
+'d'
+'e'
+'W'
+'i'
+'l'
+'s'
+'o'
+'n'
+'A'
+'n'
+'d'
+'e'
+'r'
+'s'
+'o'
+'n'
+>>> list(full_name)
+['C', 'l', 'a', 'u', 'd', 'e', 'W', 'i', 'l', 's', 'o', 'n', 'A', 'n', 'd', 'e', 'r', 's', 'o', 'n']
+>>> for letter in full_name:
+	"Give me a " + letter + "!"
+
+	
+'Give me a C!'
+'Give me a l!'
+'Give me a a!'
+'Give me a u!'
+'Give me a d!'
+'Give me a e!'
+'Give me a W!'
+'Give me a i!'
+'Give me a l!'
+'Give me a s!'
+'Give me a o!'
+'Give me a n!'
+'Give me a A!'
+'Give me a n!'
+'Give me a d!'
+'Give me a e!'
+'Give me a r!'
+'Give me a s!'
+'Give me a o!'
+'Give me a n!'
+>>> for letter in full_name:
+	"Give me a " + letter + "!"
+
+	
+'Give me a C!'
+'Give me a l!'
+'Give me a a!'
+'Give me a u!'
+'Give me a d!'
+'Give me a e!'
+'Give me a W!'
+'Give me a i!'
+'Give me a l!'
+'Give me a s!'
+'Give me a o!'
+'Give me a n!'
+'Give me a A!'
+'Give me a n!'
+'Give me a d!'
+'Give me a e!'
+'Give me a r!'
+'Give me a s!'
+'Give me a o!'
+'Give me a n!'
+>>> for letter in full_name:
+	if letter in "aeiouAEIOU":
+		"Give me an " + letter + "!"
+	else:
+		"Give me a " + letter + "!"
+
+		
+'Give me a C!'
+'Give me a l!'
+'Give me an a!'
+'Give me an u!'
+'Give me a d!'
+'Give me an e!'
+'Give me a W!'
+'Give me an i!'
+'Give me a l!'
+'Give me a s!'
+'Give me an o!'
+'Give me a n!'
+'Give me an A!'
+'Give me a n!'
+'Give me a d!'
+'Give me an e!'
+'Give me a r!'
+'Give me a s!'
+'Give me an o!'
+'Give me a n!'
+>>> for letter in full_name:
+	if letter in "aeiouAEIOU":
+		"Give me an " + letter + "!"
+	elif letter in "rts":
+		"Give me lots of " + letter*20 + "!"
+	else:
+		"Give me a " + letter + "!"
+
+		
+'Give me a C!'
+'Give me a l!'
+'Give me an a!'
+'Give me an u!'
+'Give me a d!'
+'Give me an e!'
+'Give me a W!'
+'Give me an i!'
+'Give me a l!'
+'Give me lots of ssssssssssssssssssss!'
+'Give me an o!'
+'Give me a n!'
+'Give me an A!'
+'Give me a n!'
+'Give me a d!'
+'Give me an e!'
+'Give me lots of rrrrrrrrrrrrrrrrrrrr!'
+'Give me lots of ssssssssssssssssssss!'
+'Give me an o!'
+'Give me a n!'
+>>> for letter in full_name:  # This is a comment
+	if letter in "aeiouAEIOU":
+		"Give me an " + letter + "!"
+	elif letter in "rts":
+		"Give me lots of " + letter*20 + "!"
+	else:
+		"Give me a " + letter + "!"

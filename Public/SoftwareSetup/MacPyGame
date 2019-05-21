@@ -1,0 +1,15 @@
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+sudo brew doctor
+brew update
+brew install python3
+brew install sdl sdl_image sdl_mixer sdl_ttf portmidi mercurial
+brew install libogg libvorbis
+brew install sdl_mixer —with-libvorbis
+brew reinstall sdl_mixer —with-libvorbis
+brew install smpeg
+cd ~/Downloads
+hg clone https://bitbucket.org/pygame/pygame
+cd pygame
+cd src
+pip3 install ~/Downloads/pygame
+

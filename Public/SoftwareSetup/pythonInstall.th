@@ -1,0 +1,6 @@
+sudo apt-get install build-essential libncursesw5-dev libreadline5-dev libssl-dev libgdbm-dev libc6-dev libsqlite3-dev tk-dev
+
+./configure --prefix=/opt/python3 
+make 
+sudo make install
+sudo ln -s /opt/python3/bin/python3 /usr/local/bin/python3

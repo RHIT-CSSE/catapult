@@ -1,0 +1,2 @@
+sed -e '/p class="note"/d' PythonCatapult-Schedule.htm >> output.txt
+mv output.txt PythonCatapult-Schedule.htm
