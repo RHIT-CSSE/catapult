@@ -14,7 +14,7 @@ def distance(point1, point2):
 frame_width = 400
 frame_height = 400
 
-frame_color = (124,6,213)
+frame_color = (0,0,0)
 
 frame = pygame.display.set_mode((frame_width, frame_height))
 
@@ -67,7 +67,7 @@ while player_clicking_in_circles:
 
     successful_click_text = font.render(success_message, True, (122, 237, 201), (0, 0, 0))
 
-    frame.blit(instruction_text, (25, 25))
+    frame.blit(instruction_displayable_text, (25, 25))
     frame.blit(successful_click_text, (25, 375))
 
     pygame.display.update()
