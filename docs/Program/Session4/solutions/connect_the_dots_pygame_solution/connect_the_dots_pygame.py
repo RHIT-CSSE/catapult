@@ -29,7 +29,7 @@ def draw_point(point_position):
     pygame.draw.circle(frame, black, point_position, click_distance_threshold, click_distance_threshold)
 
 def draw_line(point1, point2):
-    pygame.draw.line(frame, black, point1, point2), click_distance_threshold
+    pygame.draw.line(frame, black, point1, point2, click_distance_threshold)
 
 list_of_points_clicked_by_user = []
 
