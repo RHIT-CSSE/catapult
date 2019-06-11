@@ -5,7 +5,7 @@ import time
 def main():
     pygame.init()
     game = Game()
-    game.runGame()
+    game.run_game()
 
 class Game:
     def __init__(self):
@@ -16,7 +16,7 @@ class Game:
         self.screen.fill(pygame.Color('gray'))
         self.ball = Ball(self.screen)
 
-    def runGame(self):
+    def run_game(self):
         running = True
         while running:
             for event in pygame.event.get():
