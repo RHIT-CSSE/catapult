@@ -1,46 +1,76 @@
-# Examples of using graphics
+# Examples of using graphics with pygame
 
-from zellegraphics import *
+# import the pygame module, so you can use it
+import pygame
 import time
- 
-# Create a graphics window
-win = GraphWin('Our First Graphics Demo' , 700, 500)
 
-# Create a line and draw it on the window
-line = Line(Point(20, 30), Point(300, 490))
-line.draw(win)
+BLACK = (  0,   0,   0)
+WHITE = (255, 255, 255)
+BLUE =  (  0,   0, 255)
+GREEN = (  0, 255,   0)
+RED =   (255,   0,   0)
 
-# Create a new line, set its width, set its color, and draw it on the window
-thickLine = Line(Point(30, 490), Point(200, 30))
-thickLine.setWidth(5)
-thickLine.setOutline('red')
-thickLine.draw(win)
+# initialize the pygame module
+pygame.init()
+# initial position
+x = 550
+y = 50
+width = 700
+height = 500
+# initial direction
+dx = 0
+dy = 5
 
 
-# Create a new line and draw it in one statement
-(Line(Point(200, 230), Point(500, 230))).draw(win)
+# create a surface on screen that has the size of 700 x 500 with a caption
+screen = pygame.display.set_mode((700, 500))
+pygame.display.set_caption("Our First Graphics Demo")
 
-# Create a circle and draw it on the window
-Circle(Point(500, 100), 70).draw(win)
+# define a variable to control the main loop
+running = True
 
-# Create a rectangle, set its fill to green, and draw it on the screen
-rectangle = Rectangle(Point(350, 450), Point(400, 500))
-rectangle.setFill('green')
-rectangle.draw(win)
+# main loop
+while running:
+    # event handling, gets all event from the event queue
+    for event in pygame.event.get():
+        # only do something if the event is of type QUIT
+        if event.type == pygame.QUIT:
+            # change the value to False, to exit the main loop
+            running = False
 
-# draw several lines on the screen in a loop
-for offset in range(20):
-    orangeLine = Line(Point(200 - 6* offset, 100 + 8* offset),
-                      Point(50 - 6* offset, 50 + 8* offset))
-    orangeLine.setOutline(color_rgb(255, 150, 0))
-    orangeLine.setWidth(3)
-    orangeLine.draw(win)
+    # Clear the screen and set the screen background
+    screen.fill(WHITE)
 
-# move the rectangle across the screen and sleep a set amount of time
-for i in range(300):
-    rectangle.move(1, -1)
+    # update square's y position with direction
+    y += dy
+    # check bounds
+    if y < 0 or y + 100 > height:
+        dy = -dy
+
+    # Draw a line with color black and width 1 on the screen
+    pygame.draw.line(screen, BLACK, (50, 50), (500, 50), 1)
+
+    # Draw a Rectangle(Square) with color green on the screen
+    # and move it up and down
+    pygame.draw.rect(screen, GREEN, [x, y, 100, 100])
+
+    # Draw a circle with red fill
+    pygame.draw.circle(screen, RED, (150, 350), 50)
+
+    # Draw an ellipse with blue outline
+    pygame.draw.ellipse(screen, BLUE, [300, 300, 150, 100], 1)
+
+    # draw several lines on the screen in a loop
+    for i in range(10):
+        offset = 20
+        y1 = 50 + offset * (i + 1)
+        y2 = 50 + offset * (i + 1)
+        pygame.draw.line(screen, BLACK, (50, y1), (500, y2), 1)
+
+    # Update the screen
+    pygame.display.update()
     time.sleep(0.01)
 
-# wait to close the window
-time.sleep(5)
-win.close()
+
+# Exit pygame when hit here
+pygame.quit()
