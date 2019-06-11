@@ -12,41 +12,46 @@ class Game:
         self.width = 300
         self.height = 300
         self.screen = pygame.display.set_mode((self.width, self.height))
-        # Need to set background so shapes are drawn with full color
-        self.background = pygame.Surface(self.screen.get_size())
-        self.background = self.background.convert()
-        self.screen.fill((220, 220, 220))  # Values can be changed as needed. Example values
+        pygame.display.set_caption('Bouncing Ball')
+        self.screen.fill(pygame.Color('gray'))
         self.ball = Ball(self.screen)
 
     def runGame(self):
-        pygame.key.set_repeat(500, 30)  # Values can be changed as needed. Example values
-
-        while 1:
-            for event in pygame.event.get():  # Handles figuring out even
+        running = True
+        while running:
+            for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     sys.exit()
-            self.screen.fill((220, 220, 220))  # Values can be changed as needed. Example values
-            # self.ball.draw()
+
+            self.screen.fill(pygame.Color('gray'))
+
             self.ball.move_ball()
-            # play sound here
-            time.sleep(.1)
+
+            time.sleep(.01)
+
             pygame.display.update()
 
 
-class Ball(pygame.sprite.Sprite):
+class Ball():
     def __init__(self, screen):
-        pygame.sprite.Sprite.__init__(self)
         self.screen = screen
         self.ball_color = pygame.Color("green")
+        self.x = 70
+        self.y = 70
         self.x_direction = 2
         self.y_direction = 4
-        self.radius = 10  # Can be used in other functions
-        self.rect = pygame.draw.circle(screen, self.ball_color, (70, 70), self.radius,
-                                       0)  # Values can be changed as needed. Example values
+        self.radius = 10
+        self.ball_width = 0
+        self.rect = pygame.draw.circle(screen, self.ball_color, (self.x, self.y), self.radius, self.ball_width)
 
     def draw(self):
-        # TODO - Draw the Ball on the Screen
         pygame.draw.ellipse(self.screen, self.ball_color, self.rect)
+
+    def move_ball(self):
+        collision_result = self.collision()
+        self.rect = self.rect.move(self.x_direction, self.y_direction)
+        self.draw()
+        return collision_result
 
     def collision(self):
         if (self.rect.centerx + self.radius >= self.screen.get_width()):
@@ -63,14 +68,5 @@ class Ball(pygame.sprite.Sprite):
             return True
 
         return False
-
-    def move_ball(self):
-        # TODO - Handle collisions with the walls of the display here - We don't
-        # want our ball moving off of our screen
-        collisionResult = self.collision()
-        self.rect.move_ip(self.x_direction, self.y_direction)
-        self.draw()
-        return collisionResult
-
 
 main()
