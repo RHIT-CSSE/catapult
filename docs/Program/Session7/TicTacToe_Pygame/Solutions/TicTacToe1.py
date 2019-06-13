@@ -47,6 +47,8 @@ def main():
         for event in pygame.event.get():    # event handling, gets all event from the event queue
             if event.type == pygame.QUIT:   # only do something if the event is of type QUIT
                 running = False             # change the value to False, to exit the main loop
+            if event.type == pygame.MOUSEBUTTONUP:
+                print('mouse clicked!')
 
         screen.fill(WHITE)  # Clear the screen and set the screen background
 
