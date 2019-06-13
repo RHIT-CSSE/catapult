@@ -33,7 +33,6 @@ var graphicsLinks = [
         url: "./SoftwareSetup/zellegraphics_Install_Instructions.pdf", 
         desc: "Installation Instructions: John Zelle's' Python Graphics module"
     },
-    {url: "./zellegraphics.pdf", desc: "Documentation: John Zelle's Python Graphics module"},
     {url: "./Program/Session3/NamedColors.txt", desc: "List of named colors<"},
     {
         url: "http://www.pythonware.com/library/tkinter/introduction/",
