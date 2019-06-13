@@ -36,7 +36,7 @@ var graphicsLinks = [
 
 // List of links for Other tab and links table
 var otherLinks = [
-    {url: "./../Pygame%20Demos/Bubble%20Trouble", desc: "Bubble Trouble Source Files"},
+    {url: "https://github.com/RHIT-CSSE/catapult/tree/master/Pygame%20Demos/Bubble%20Trouble", desc: "Bubble Trouble Source Files"},
     {
         url: "./SoftwareSetup/Windows_Install_Instructions.pdf",
         desc: "Install software to work on your personal Windows PC"
