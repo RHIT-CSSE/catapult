@@ -9,9 +9,9 @@ var roseLinks = [
     {url: "https://www.rose-hulman.edu/csse.aspx", desc: "RHIT Computer Science &amp; Software Engineering"},
     {url: "https://moodle.rose-hulman.edu/", desc: "Rose-Hulman Moodle"},
     {
-        url: "https://www.rose-hulman.edu/class/csse/catapult/2014-s2/Program/Session1/SuggestedPythonProjects.pdf",
+        url: "./Program/Session1/SuggestedPythonProjects.pdf",
         desc: "Python Project Descriptions (for inspiration)"
-    },                 
+    },
     {url: "https://www.rose-hulman.edu/offices-and-services/logan-library.aspx", desc:  "Rose-Hulman Logan Library"}
 ];
 
@@ -36,17 +36,17 @@ var graphicsLinks = [
 
 // List of links for Other tab and links table
 var otherLinks = [
-    {url: "./Pygame%20Demos/Bubble%20Trouble", desc: "Bubble Trouble Source Files"},
+    {url: "../Pygame%20Demos/Bubble%20Trouble", desc: "Bubble Trouble Source Files"},
     {
-        url: "./SoftwareSetup/Windows_Install_Instructions.pdf", 
+        url: "./SoftwareSetup/Windows_Install_Instructions.pdf",
         desc: "Install software to work on your personal Windows PC"
     },
     {
-        url: "./SoftwareSetup/Mac_Install_Instructions.pdf", 
+        url: "./SoftwareSetup/Mac_Install_Instructions.pdf",
         desc: "Install software to work on your Mac"
     },
 	{
-        url: "./SoftwareSetup/Catapult_Installation for Linux.pdf", 
+        url: "./SoftwareSetup/Catapult_Installation for Linux.pdf",
         desc: "Install software to work on your Linux machine"
     },
     {url: "https://www.rhventures.org/", desc: "Rose-Hulman Ventures - field trip"},
