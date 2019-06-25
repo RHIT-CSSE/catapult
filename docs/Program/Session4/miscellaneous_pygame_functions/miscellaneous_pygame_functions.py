@@ -11,7 +11,12 @@ pygame.display.set_caption('Miscellaneous Pygame Graphics')
 def draw_parallel_vertical_lines(starting_point, number_of_lines, line_length, distance_between_lines):
     # TODO: Delete pass and draw parallel vertical lines.
     #  PyGame documentation for drawing lines - https://www.pygame.org/docs/ref/draw.html#pygame.draw.line
-    pass
+    x = starting_point[0]
+    y = starting_point[1]
+    for i in range(number_of_lines):
+        x_for_this_line = x+i*distance_between_lines
+        y_for_ending_point = y+line_length
+        pygame.draw.line(frame, pygame.Color("black"),(x_for_this_line,y),(x_for_this_line,y_for_ending_point))
 
 def draw_equilateral_triangle(lower_left_point, triangle_width):
     # TODO: Delete pass and draw an equilateral triangle.
@@ -53,7 +58,7 @@ while running:
         #  If you are unsure whether or not things look the way they are supposed to, refer to the image titled
         #  'WhatThingsShouldLookLikeWhenYouAreFinished.png' to compare your screen with the way things should look.
 
-        # draw_parallel_vertical_lines((50, 50), 20, 30, 10)
+        draw_parallel_vertical_lines((50, 50), 20, 30, 10)
         # draw_equilateral_triangle((200, 200), 50)
         # draw_concentric_circles(10, (300, 300), 5)
         # draw_triangle_pyramid((400, 400), 40)

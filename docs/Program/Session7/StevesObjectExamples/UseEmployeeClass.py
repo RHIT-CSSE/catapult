@@ -1,5 +1,4 @@
 from EmployeeClass import Employee
-
 # We're going to use the class defined in the other file, above
 
 emp3 = Employee("Derek", 6000)

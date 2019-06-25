@@ -52,13 +52,14 @@ def seasonOf(date): # The date is a "tuple" of month, day, year
             season = "winter"
         else:
             season = "spring"
+
     return season
 # TODO: You finish this function, for months 6 and 9, above the return!
 
 # Then here's the part of the program which really causes
 # something to happen.  Code that includes calling the functions
 # defined above:
-
+print("Hello world!")
 # Test cases:
 print("Divisor tests:")
 # The for-loop picks consecutive values from a Python "list":
