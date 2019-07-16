@@ -1,6 +1,6 @@
 // List of links for Announcements tab and links table
 var announcementLinks = [
-    {url: "ProjectFiles/", desc: "Helpful project samples (abstract, poster template, etc.)"}
+    {url: "https://github.com/RHIT-CSSE/catapult/tree/master/docs/ProjectFiles", desc: "Helpful project samples (abstract, poster template, etc.)"}
 ];
 
 // List of links for Rose/catapult tab and links table
