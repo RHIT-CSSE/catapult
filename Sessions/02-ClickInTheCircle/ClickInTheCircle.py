@@ -9,7 +9,6 @@ def distance(point1, point2):
     point2_y = point2[1]
 
     # TODO 4: Return the actual distance between point 1 and point 2.
-    #  Hint: you will need the math library for the sqrt function.
     #       distance = sqrt(   (delta x) ** 2 + (delta y) ** 2  )
     return 0
 
