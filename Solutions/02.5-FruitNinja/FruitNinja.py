@@ -28,7 +28,7 @@ def main():
     circle_colors = [(154, 58, 212), (135, 206, 235), (0, 255, 0)]
     radius_list = [50, 60, 40]
     center_points = [(25, 400), (-20, 300), (0, 100)]
-    velocity_list = [(10, -15), (8, -15), (10, -10)]
+    velocity_list = [(10, -15), (8, -15), (7, -10)]
     gravity = -1
     dead_velocity = (0, 40)
 
@@ -37,11 +37,6 @@ def main():
     while True:
         clock.tick(60)
         screen.fill(pygame.Color("Black"))
-
-        # go through the list to draw all circles
-        for i in range(number_of_circles):
-            # draw the new circle
-            pygame.draw.circle(screen, circle_colors[i], center_points[i], radius_list[i])
 
         # detect clicks in any circle
         for event in pygame.event.get():
@@ -79,7 +74,12 @@ def main():
                     new_velocity = (x_velocity, y_velocity - gravity)
                     velocity_list[i] = new_velocity
 
-
+        # go through the list to draw all circles
+        for i in range(number_of_circles):
+            center_x = center_points[i][0]
+            center_y = center_points[i][1]
+            int_center_point = (int(center_x), int(center_y))
+            pygame.draw.circle(screen, circle_colors[i], int_center_point, radius_list[i])
 
         # blit the instruction font onto the screen
         screen.blit(instructions_image, (10, 10))
