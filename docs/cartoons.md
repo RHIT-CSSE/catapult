@@ -13,3 +13,8 @@ Papers Preview.  Then I talked about the animation track and showed:
 3. Then folks wanted heartwarming so I showed Home Sweet Home.
 4. The end of that one was too sad, so folks wanted something happy.
    So I showed Contre Temps.
+   
+# Alternative from Dave Fisher
+
+I just did some TED talks and YouTube videos instead.  Here are the ones I used...
+https://docs.google.com/document/d/1YcxnaRqgjfwJTs4mu_LBf73e9nrCGqjDQ67ySW8qPE4/edit?usp=sharing
