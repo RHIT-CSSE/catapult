@@ -4,10 +4,10 @@ A very informal introduction to incomputability
 
 Catapult 2019
 
-# Are there things that cannot be calculated?
+# Are there things that cannot be computed?
 
 * I'm not talking philisophical things "can an Artificial Intelligence
-  feel genuine love?"​
+  feel love?"​
 * Or fuzzy things like "can a computer detect a great essay?"​
 * But rather, are there true formal mathematical properties that can't
   be calculated by a computer?​
@@ -160,4 +160,13 @@ Consider
 
 # What to take away?
 
-There are limits to what can be computed
++ I wanted to show that there were certain formal mathematical
+  properties that cannot be computed
++ Whether a program terminates is a formal property that can't be
+  computed
++ There is something about computing systems that are fundamentally
+  unpredictable
++ A approximately similar argument to this is used to prove Godel's
+  incompleteness theorem that it doesn't tend to possible to build
+  formal systems free of paradox
++ Theoretical computer science is weird (but hopefully cool)
