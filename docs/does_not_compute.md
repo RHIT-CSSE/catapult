@@ -6,7 +6,7 @@ Catapult 2019
 
 # Are there things that cannot be computed?
 
-* I'm not talking philisophical things "can an Artificial Intelligence
+* I'm not talking philosophical things "can an Artificial Intelligence
   feel love?"​
 * Or fuzzy things like "can a computer detect a great essay?"​
 * But rather, are there true formal mathematical properties that can't
@@ -83,7 +83,7 @@ forever on a given input.
 a. check\_halts(ends\_with\_d, 'hello')
 b. check\_halts(is_even, 98)
 c. check\_halts(is\_even, -1)
-d. check\_halts(always\_halts, ????)
+d. check\_halts(check\_halts, ????)
 
 # A bad example
 
@@ -96,7 +96,7 @@ d. check\_halts(always\_halts, ????)
                 goto loop
 
 a. bad\_program(ends\_with\_d)
-b. bad\_program(always\_halts)
+b. bad\_program(check\_halts)
 c. bad\_program(bad\_program)
 
 # Let's break the last one down
